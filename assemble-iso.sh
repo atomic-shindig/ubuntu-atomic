@@ -15,11 +15,11 @@ else
     SQUASHFS_LEVEL="${SQUASHFS_LEVEL:-15}"
 fi
 
-ISO_LABEL="elementary OS ${PROFILE} ${ARCH}"
+ISO_LABEL="ubuntu OS ${PROFILE} ${ARCH}"
 
-OUT_ISO="./elementaryos-9.0-${PROFILE}-${ARCH}.${DATE}.iso"
+OUT_ISO="./ubuntu-${PROFILE}-${ARCH}.${DATE}.iso"
 
-RAW_IMAGE=$(ls elementary_${DATE}.raw)
+RAW_IMAGE=$(ls ubuntu_${DATE}.raw)
 
 if [[ -z "$RAW_IMAGE" ]]; then
     echo "error: No .raw image found matching the pattern." >&2
